@@ -1,0 +1,74 @@
+.main-title {
+  border-bottom: 1px solid $color-000;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 -50px 6px -10px;
+}
+
+.main-content {
+  height: $full-size;
+  margin: 0 0 0 70px;
+  padding-right: 0;
+
+  .row {
+    height: $full-size;
+  }
+
+  .attrication-list {
+    overflow-y: auto;
+  }
+
+  section {
+    margin-bottom: 10px;
+    padding: 0 5px;
+  }
+
+  .figure-attraction-card {
+    border: 1px solid $color-ccc;
+    border-radius: 5px;
+    box-shadow: 1px 2px 2px $opacity-1;
+
+    img {
+      min-height: 160px;
+      width: 100%;
+    }
+
+    p {
+      margin: 10px;
+    }
+
+    .actions {
+      position: absolute;
+      right: 12px;
+      top: 10px;
+      color: $body-color;
+
+      .active {
+        background-color: #8b0000;
+      }
+      .startLoc {
+        border: 1px solid $body-color;
+        padding: 3px;
+        margin-right: 5px;
+        border-radius: 5px;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .attraction-name {
+      font-size: 20px;
+      font-weight: bold;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .attraction-duration {
+      margin: 0 10px;
+      padding-left: 5px;
+    }
+  }
+}

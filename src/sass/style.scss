@@ -1,0 +1,35 @@
+$full-size: 100%;
+$fullsize: 100%;
+$color-ccc: #ccc;
+$color-444: #444;
+$color-fff: #fff;
+$color-000: #000;
+$color-0aacc8: #0aacc8;
+$opacity-1: rgba(0, 0, 0, .1);
+$body-color: #fff;
+$rgba1: rgba(255, 255, 255, .1);
+$rgba3: rgba(0, 0, 0, .3);
+$rgba2: rgba(0, 0, 0, .2);
+
+@import 'header';
+@import 'home';
+@import 'leftbar';
+@import 'main';
+@import 'rightbar';
+
+html {
+  height: $full-size;
+}
+
+body {
+  height: $full-size;
+
+  .container-body-div {
+    height: 82%;
+    padding-top: 1%;
+
+    .row {
+      height: $full-size;
+    }
+  }
+}

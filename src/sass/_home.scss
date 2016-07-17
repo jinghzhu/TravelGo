@@ -1,0 +1,109 @@
+@mixin placeholder($color, $size:"") {
+  &::-webkit-input-placeholder {
+    color: $color;
+    @if $size != "" {
+      font-size: $size;
+    }
+  }
+  &:-moz-placeholder {
+    color: $color;
+    @if $size != "" {
+      font-size: $size;
+    }
+  }
+  &::-moz-placeholder {
+    color: $color;
+    @if $size != "" {
+      font-size: $size;
+    }
+  }
+  &:-ms-input-placeholder {
+    color: $color;
+    @if $size != "" {
+      font-size: $size;
+    }
+  }
+}
+
+// use placeholder mixin (size param is optional)
+[placeholder] {
+  @include placeholder(white, 15px);
+}
+
+
+.container-class {
+  padding: 0;
+
+  .carousel-inner>.item {
+    height: 100%;
+    
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.slideclass {
+  height: 100%;
+  width: 100%;
+}
+
+.travel-bg-div {
+  height: $full-size;
+
+  .row {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+  }
+
+  .logo-title-section {
+    position: absolute;
+    left: 50%;
+    top: 38%;
+    transform: translate(-50%, -50%);
+    background-image: url('../images/logo.svg');
+    background-repeat: no-repeat;
+    width: 375px;
+    height: 120px;
+  }
+
+  .search-section {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    div {
+      margin-bottom: 10px;
+    }
+
+    input {
+      background-color: $rgba1;
+      border: 1px solid $body-color;
+      border-radius: 10px;
+      color: $body-color;
+
+      &:focus {
+        background-color: $rgba3;
+      }
+    }
+
+    .glyphicon {
+      color: $body-color;
+      cursor: pointer;
+      font-size: 16px;
+      position: absolute;
+      right: 30px;
+      top: 9px;
+    }
+
+    .title-go {
+      color: $title-go-color;
+    }
+  }
+
+  
+}

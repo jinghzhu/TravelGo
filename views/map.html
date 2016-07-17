@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
+  <link rel="stylesheet" type="text/css"
+        href="https://js.api.here.com/v3/3.0/mapsjs-ui.css"/>
+  <script type="text/javascript" charset="UTF-8"
+          src="https://js.api.here.com/v3/3.0/mapsjs-core.js"></script>
+  <script type="text/javascript" charset="UTF-8"
+          src="https://js.api.here.com/v3/3.0/mapsjs-service.js"></script>
+  <script type="text/javascript" charset="UTF-8"
+          src="https://js.api.here.com/v3/3.0/mapsjs-ui.js"></script>
+  <script type="text/javascript" charset="UTF-8"
+          src="https://js.api.here.com/v3/3.0/mapsjs-mapevents.js"></script>
+  <script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+  <script src="js/ft.ui.js" defer></script>
+  <script src="js/ft.citySearch.js" defer></script>
+  <style>
+    .mark-item {
+      width: 50px;
+      height: 100px;
+      border: 1px solid #923912;
+    }
+    .mark-item-big {
+      width: 50px;
+      height: 100px;
+      border: 1px solid #923912;
+    }
+
+    .sidebar {
+      width: 20%;
+      float: left;
+      background: #c0ffee;
+      min-height: 50vh;
+    }
+
+    .main {
+      width: 73.33333%;
+      float: left;
+      background: grey;
+      height: 800px;
+    }
+  </style>
+</head>
+<body>
+<div class="sidebar">
+
+  <ul id="ckbox">
+    <li>坐标1<input type="checkbox" value="{'lat':50,'lng':3.3}"></li>
+  </ul>
+  <button value='1'>route1</button>
+  <button value='2'>route2</button>
+</div>
+<div id="map" class="main"/>
+<script type="text/javascript" charset="UTF-8">
+
+  
+  /**
+   * Boilerplate map initialization code starts below:
+   */
+
+//Step 1: initialize communication with the platform
+  var platform = new H.service.Platform({
+    app_id: 'DemoAppId01082013GAL',
+    app_code: 'AJKnXv84fjrb0KIHawS0Tg',
+    useCIT: true,
+    useHTTPS: true
+  });
+  var defaultLayers = platform.createDefaultLayers();
+
+  //Step 2: initialize a map - this map is centered over Europe
+  var map = new H.Map(document.getElementById('map'),
+    defaultLayers.normal.map, {
+      center: {lat: 52, lng: 5},
+      zoom: 5
+    });  
+
+  //Step 3: make the map interactive
+  // MapEvents enables the event system
+  // Behavior implements default interactions for pan/zoom (also on mobile touch environments)
+  var behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
+
+  // Create the default UI components
+  var ui = H.ui.UI.createDefault(map, defaultLayers);
+
+  $(document).ready(function () {
+    searchView('London','2016-07-08','2016-07-11');
+	
+	$('button').each(function () {
+      $(this).click(function () {
+        var va = $(this).val();
+        var wp = []
+		if(va === '1'){			   
+			wp.push('50.11,8.68');
+			wp.push('52.53,13.38');
+			wp.push('52.53,18.38');
+			wp.push('52.53,25.38');
+			showRoute(wp);
+		} else {
+			wp.push('50,20');
+			wp.push('50,24');
+			wp.push('50,30');
+			showRoute(wp);
+		}			
+      })
+    })
+  })
+</script>
+</body>
+</html>

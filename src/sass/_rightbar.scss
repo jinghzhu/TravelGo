@@ -1,0 +1,29 @@
+.right-title {
+  background-image: url('../images/right_title_bg.png');
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-size: 40%;
+  border-bottom: 1px solid $color-000;
+  color: $color-fff;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 500;
+  padding-right: 10px;
+  margin-bottom: 6px;
+  text-align: right;
+
+  span {
+    padding: 0 5px;
+  }
+}
+
+.right-side-map {
+  height: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 20px;
+
+  .map-container {
+    height: 100%;
+  }
+}

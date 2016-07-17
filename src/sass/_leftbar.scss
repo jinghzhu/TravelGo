@@ -1,0 +1,51 @@
+.left-side-nav-tab {
+  height: 80%;
+  left: 0;
+  position: fixed;
+  top: 13%;
+
+  .leftbar-title {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    text-align: center;
+  }
+}
+
+.nav-tabs {
+  background-color: $color-000;
+  border-bottom: 0;
+  float: left;
+  height: 100%;
+  padding-right: 0;
+
+  li {
+    border-bottom: 1px solid $color-fff;
+    float: none;
+    margin: 0;
+
+    &.active>span {
+      background-color: $color-0aacc8;
+    }
+  }
+
+  .day-span {
+    align-items: center;
+    background-color: $color-000;
+    border: 0;
+    border-radius: 0;
+    color: $color-fff;
+    cursor: pointer;
+    display: flex;
+    font-size: 18px;
+    justify-content: center;
+    margin-right: 0;
+    min-height: 60px;
+    min-width: 60px;
+
+    &:hover {
+      background-color: $color-0aacc8;
+    }
+  }
+}
