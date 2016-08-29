@@ -1,16 +1,31 @@
+# Introduction of TravelGo
+
+TravelGo is a mini project about travel itinerary management. It is developed in IBM Hackademy Shanghai Event and it requires each team to decide what they would do. My team (1 designer + 6 developers) finished this work in only 2 days. 
+
+In this mini project, I, [Jing Hua Zhu](https://github.com/jinghzhu), contributed the whole idea of what we could do, how to implement them and why we should make it happen. Besides, I also designed the main features and coperated with designer to go through the wirdframe.
+
+Talking about development, I was responsible for the landing page with and backedn logic.
+
+## Features
+
+The main features of TravleGO include:
+(1) With the input destination and travel date, it could automatically list all available resources with helpful information, like price, duration ...etc. Being different with most existing itineray management system, it is smart enough to deal with the seasonal travle resources. For example, if the travle date is around December 31th, it could help you get the travle info of New Year Eve.
+
+(2) A interactive map is implemented to provide the navigation info. When adding or removing some spot, it will automatically generate new navigation info.
+
 ## Collaborating
 
 One of the most effective ways to collaborate on GitHub is by using a forking/branching model as described in the [GitHub Guides](https://guides.github.com/).
 
 ### Setup
 
-* [Fork](https://guides.github.com/activities/forking/) the main (blessed) repository to your personal GitHub space
+* [Fork](https://guides.github.com/activities/forking/) the main repository to your personal GitHub space
 * Clone this new fork locally to your computer. Make sure you use the SSH URL, not the HTTPS URL. This will be your `origin` remote.
-* Add an `upstream` remote whose URL is the SSH URL of the blessed repository - `git remote add upstream {{url}}`, replacing `{{url}}` with the blessed repo's URL.
+* Add an `upstream` remote whose URL is the SSH URL of the main repository - `git remote add upstream {{url}}`, replacing `{{url}}` with the main repo's URL.
 
 ### Divvying Up Work
 
-* As a team, create [issues](https://guides.github.com/features/issues/) in the blessed repository to describe what work needs to be done
+* As a team, create [issues](https://guides.github.com/features/issues/) in the main repository to describe what work needs to be done
 * Assign the issue to an individual to work on and add it to the `To Do` pipeline in the [ZenHub](ibm.biz/zenhub-install) boards
 * When you have started working on an issue, move it to the `In Progress` pipeline.
 
@@ -43,12 +58,6 @@ npm run gulp
 ```
 
 This will run [Gulp](http://gulpjs.com/), starting your Node server, wrapping it in a proxy server that will be accessible on multiple devices and live reload your assets, and watch your Node file for changes, stopping and starting the Node server on changes. It will also lint all of your JavaScript and Sass, compile your Sass, Uglify your JavaScript, and optimize your Images (yay Task Runners!).
-
-## Testing and Deploying to Bluemix
-
-Testing and deploying to Bluemix is all done through Travis, which you should already have set up. Whenever a commit comes in to any branch of your repository, Travis will start up and run `npm test` (found in the `scripts` property in `package.json`). If it finds any errors, it'll be angry :rage: and you'll need to go fix them. Once all of your tests pass, Travis will be happy again :green_heart:. If you want to add tests to run, add some Gulp tasks and make sure they're run during the `test` Gulp task.
-
-If a commit comes in to the `master` branch and all of the tests pass, Travis will use CloudFoundry to create a deployable app from your source code and go deploy it on Bluemix! Then, head over to your URL to see it live!
 
 ## Extending This Starter
 
