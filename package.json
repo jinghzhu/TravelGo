@@ -1,5 +1,5 @@
 {
-  "name": "ha--node-starter",
+  "name": "TravelGo-node-starter",
   "version": "1.0.0",
   "description": "Hack Academy starter repo",
   "main": "index.js",
@@ -11,9 +11,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.ibm.com/hackademy/node-starter.git"
+    "url": "https://github.com/jinghzhu/TravelGo.git"
   },
-  "author": "Sam Richard",
+  "author": "Jinghua ZHU",
   "license": "Apache-2.0",
   "dependencies": {
     "cfenv": "^1.0.0",

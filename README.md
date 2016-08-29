@@ -1,10 +1,8 @@
 # Introduction of TravelGo
 
-TravelGo is a mini project about travel itinerary management. It is developed in IBM Hackademy Shanghai Event and it requires each team to decide what they would do. My team (1 designer + 6 developers) finished this work in only 2 days. 
+TravelGo is a mini project about travel itinerary management. It is developed in IBM Hackademy Shanghai Event which requires each team to decide what they would do. My team (1 designer + 6 developers) finished TravelGo in 2 days. 
 
-In this mini project, I, [Jing Hua Zhu](https://github.com/jinghzhu), contributed the whole idea of what we could do, how to implement them and why we should make it happen. Besides, I also designed the main features and coperated with designer to go through the wirdframe.
-
-Talking about development, I was responsible for the landing page with and backedn logic.
+In this mini project, I, [Jing Hua Zhu](https://github.com/jinghzhu), contributed the whole idea of what we could do, how to implement them and why we should make it happen. Besides, I also designed the main features and coperated with designer to go through the wirdframe. In the development part, I was responsible for the landing page with and backend logic.
 
 ## Features
 

@@ -1,7 +1,7 @@
 applications:
   - disk_quota: 1024M
-    host: ha9--travelgo
-    name: Hack Academy - Node Starter
+    host: TravelGoDemo
+    name: TravelGo
     path: .
     domain: mybluemix.net
     instances: 1
