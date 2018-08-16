@@ -1,13 +1,12 @@
-# Introduction of TravelGo
+# Introduction
 
-TravelGo is a mini project about travel itinerary management. My team (1 designer + 6 developers) finished TravelGo in 2 days. 
+TravelGo is a mini project about travel itinerary management. 1 designer + 6 developers developed it in 2 days. So, this may not be perfect.
 
 ## Features
 
-The main features of TravleGO include:
-(1) With the input destination and travel date, it could automatically list all available resources with helpful information, like price, duration ...etc. Being different with most existing itineray management system, it is smart enough to deal with the seasonal travle resources. For example, if the travle date is around December 31th, it could help you get the travle info of New Year Eve.
+1. With the input destination and travel date, it can automatically list all available resources with detail information, like price, duration ...etc. Being different with most existing itineray management system, it is smart enough to deal with the seasonal travle resources. For example, if the travle date is around December 31th, it could help you get the travle info of New Year Eve.
 
-(2) A interactive map is implemented to provide the navigation info. When adding or removing some spot, it will automatically generate new navigation info.
+2. An interactive map is implemented to provide the navigation info. When adding or removing some spot, it will automatically generate new navigation info.
 
 ## Collaborating
 
@@ -35,7 +34,7 @@ One of the most effective ways to collaborate on GitHub is by using a forking/br
 * Issue a Pull Request in to the upstream repository when the work is done. Make sure the Pull Request comment includes a [keyword for closing issues](https://help.github.com/articles/closing-issues-via-commit-messages/) for closing the issue the work is for - `Resolves #42` (with `42` being the issue number)
 * Once the Pull Request is merged, delete the local and remote branch you worked on - `git branch -d {{branch-name}}` for local, `git push origin :{{branch-name}}` for remote. **Important: Never Reuse A Branch After It Has Been Merged**
 
-## Installing
+## Install
 
 After forking and cloning the codebase, run the following command to install all of the dependencies:
 
@@ -45,7 +44,7 @@ npm install
 
 Whenever you update your branch from `upstream master`, be sure to re-run `npm install` to install the latest dependencies from your team.
 
-## Running
+## Run
 
 Running your project for development is a single command:
 
